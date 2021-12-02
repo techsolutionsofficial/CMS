@@ -25,6 +25,22 @@
     {
       "library": "magnific-popup.js@1.1.0",
       "destination": "wwwroot/lib/magnific-popup.js/"
+    },
+    {
+      "library": "aos@2.3.4",
+      "destination": "wwwroot/lib/aos/"
+    },
+    {
+      "library": "Swiper@7.3.1",
+      "destination": "wwwroot/lib/Swiper/"
+    },
+    {
+      "library": "bxslider@4.2.15",
+      "destination": "wwwroot/lib/bxslider/"
+    },
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "wwwroot/lib/jqueryui/"
     }
   ]
 }
