@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CMS.Models;
 
 namespace CMS.Data
 {
@@ -12,5 +13,8 @@ namespace CMS.Data
             : base(options)
         {
         }
+
+        public DbSet<Page> Pages { get; set; }
+
     }
 }

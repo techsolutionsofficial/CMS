@@ -39,8 +39,16 @@
       "destination": "wwwroot/lib/bxslider/"
     },
     {
+      "library": "ckeditor@4.17.1",
+      "destination": "wwwroot/lib/ckeditor/"
+    },
+    {
       "library": "jqueryui@1.12.1",
       "destination": "wwwroot/lib/jqueryui/"
+    },
+    {
+      "library": "bootstrap-icons@1.7.2",
+      "destination": "wwwroot/lib/bootstrap-icons/"
     }
   ]
 }
