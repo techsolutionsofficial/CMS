@@ -1,0 +1,46 @@
+﻿@model Page
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Page</h1>
+
+<div class="row">
+    <div class="col-md-10 mx-auto">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="font-weight-bold"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            @* <div class="form-group"> *@
+            @*     <label asp-for="Slug" class="font-weight-bold"></label> *@
+            @*     <input asp-for="Slug" class="form-control" /> *@
+            @*     <span asp-validation-for="Slug" class="text-danger"></span> *@
+            @* </div> *@
+            <div class="form-group">
+                <label asp-for="Content" class="font-weight-bold"></label>
+                <textarea asp-for="Content" class="form-control"></textarea>
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            @* <div class="form-group"> *@
+            @*     <label asp-for="Sorting" class="font-weight-bold"></label> *@
+            @*     <input asp-for="Sorting" class="form-control" /> *@
+            @*     <span asp-validation-for="Sorting" class="text-danger"></span> *@
+            @* </div> *@
+            <div class="form-group">
+                <button class="btn btn-success" type="submit"> <i class="fa fa-book-open"></i> Add New Page</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
